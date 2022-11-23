@@ -3,7 +3,7 @@ import request from "@/utils/request.js"
 
 export  function tuijian(data){
     return request({
-        url:'/api/personalized',
+        url:'/personalized',
         method:'get',
         params:{
             limit:data
@@ -16,7 +16,7 @@ export  function tuijian(data){
 
 export function lunbotu(){
     return request({
-        url:'/api/banner',
+        url:'/banner',
         method:'get',
         
     })
