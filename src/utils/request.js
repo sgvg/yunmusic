@@ -4,7 +4,7 @@ let request =  axios.create({
      // `baseURL` 将自动加在 `url` 前面，除非 `url` 是一个绝对 URL。
       // 它可以通过设置一个 `baseURL` 便于为 axios 实例的方法传递相对 URL
       
-      baseURL:"http://localhost:8080",
+      baseURL:"http://47.99.84.226:3000",
       timeout:5000,  //设置请求超时，如果超时会中止请求发送
       
 })
