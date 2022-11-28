@@ -25,7 +25,7 @@ export function lunbotu(){
 
 export function newList(data){
     return request({
-        url:'/api/personalized/newsong',
+        url:'/personalized/newsong',
         method:'get',
         params:{
             limit:data
@@ -35,7 +35,7 @@ export function newList(data){
 
 export function tuijianMv(){
     return request({
-        url:'/api/personalized/mv',
+        url:'/personalized/mv',
         method:'get'
     })
 }
@@ -44,7 +44,7 @@ export function tuijianMv(){
 //播放音乐
 export function palymusic1(data){
     return request({
-        url:'/api/song/url',
+        url:'/song/url',
         method:'get',
         params:{
             id:data
@@ -57,7 +57,7 @@ export function palymusic1(data){
 
 export function tuijanDateli(data,data2){
     return request({
-        url:'/api/playlist/track/all',
+        url:'/playlist/track/all',
         method:'get',
         params:{
             id:data,
@@ -69,7 +69,7 @@ export function tuijanDateli(data,data2){
 //搜索请求
 export function Seach(data,data2){
    return request({
-       url:'/api/cloudsearch',
+       url:'/cloudsearch',
        method:'get',
        params:{
            keywords:data,
@@ -85,7 +85,7 @@ export function Seach(data,data2){
 //分类歌单头部
 export function fenlei(data){
     return request({
-        url:'/api/top/playlist/highquality',
+        url:'/top/playlist/highquality',
         method:'get',
         params:{
             limit:1,
@@ -97,7 +97,7 @@ export function fenlei(data){
 //分类歌单列表
 export function fenleiGedan(data,data2,data3){
     return request({
-        url:'/api/top/playlist',
+        url:'/top/playlist',
         method:'get',
         params:{
             
@@ -113,7 +113,7 @@ export function fenleiGedan(data,data2,data3){
 //播放Mv
 export function playmv1(data){
     return request({
-        url:'/api/mv/url',
+        url:'/mv/url',
         method:'get',
         params:{
             id:data
@@ -126,7 +126,7 @@ export function playmv1(data){
 //全部Mv 
 export function allMv(data,data2,data3,data4){
     return request({
-        url:'/api/mv/all',
+        url:'/mv/all',
         method:'get',
         params:{
             area:data,
@@ -140,7 +140,7 @@ export function allMv(data,data2,data3,data4){
 //评论
 export function tipMv(data){
     return request({
-        url:'/api/comment/mv',
+        url:'/comment/mv',
         method:'get',
         params:{
             id:data
@@ -151,7 +151,7 @@ export function tipMv(data){
 //MV信息
 export function mvdedatil(data){
     return request({
-        url:'/api/mv/detail',
+        url:'/mv/detail',
         method:'get',
         params:{
             mvid:data
